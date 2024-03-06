@@ -12,7 +12,7 @@ function App() {
     return (
         <>
             <div className="text-center py-6 mb-5">
-                <h1 className="font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-b from-purple-200 to-cyan-300 drop-shadow-lg">
+                <h1 className="font-bold text-4xl text-transparent bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
                     Image Gallery Quantity App
                 </h1>
             </div>
