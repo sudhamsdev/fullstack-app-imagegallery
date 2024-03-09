@@ -3,6 +3,9 @@
 - Java 18 (openjdk)
 - Maven 3.6.3
 - PostgreSQL 16
+  - References:
+    - https://www.postgresql.org/download/linux/ubuntu/
+    - https://ubuntu.com/server/docs/databases-postgresql
 
 
 ## Setup springboot application
