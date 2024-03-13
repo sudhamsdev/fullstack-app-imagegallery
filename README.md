@@ -1,8 +1,9 @@
 # FullStack App
 ## Specifications
-- Java 18 (openjdk)
+- Java 18 (openjdk-18-jre)
 - Maven 3.6.3
-- Node v18
+- npm package
+- Nginx
 - PostgreSQL 16
   - References:
     - https://www.postgresql.org/download/linux/ubuntu/
