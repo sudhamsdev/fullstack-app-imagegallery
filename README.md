@@ -1,21 +1,28 @@
-# FullStack App
+# Containrization of Java fullstack application
 ## Specifications
-- Java 18 (openjdk-18-jre)
-- Maven 3.6.3
-- npm package
-- Nginx
-- PostgreSQL 16
-  - References:
-    - https://www.postgresql.org/download/linux/ubuntu/
-    - https://ubuntu.com/server/docs/databases-postgresql
+- Docker Engine
+- Docker Compose
 
+## Springboot code changes
+- Update application.properties file(Path --> springboot/src/main/resources/) with PostgreSQL DB details
+```
+spring.datasource.url=jdbc:postgresql://<DockerHostIP>:<PORT-FARWARD>/pokemon
+spring.datasource.username=postgres
+spring.datasource.password=1234
+```
 
-## Setup springboot application
-- cd api
-- mvn clean install
-- mvn spring-boot:run
+## React code changes
+- Update main.jsx file(Path --> react/src/main.jsx) with Sprintboot application endpoint
+```
+axios.defaults.baseURL = 'http://<DockerHostIP>:<PORT-FARWARD>';
+```
 
-## Setup React application
-- cd app
-- npm install
-- npm run dev
+## Execute below command to spingup applications from path of the compose file
+```
+docker compose up -d
+```
+
+## Cleanup activity
+```
+docker compose down --rmi all -v
+```
