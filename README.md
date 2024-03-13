@@ -2,6 +2,7 @@
 ## Specifications
 - Java 18 (openjdk)
 - Maven 3.6.3
+- Node v18
 - PostgreSQL 16
   - References:
     - https://www.postgresql.org/download/linux/ubuntu/
